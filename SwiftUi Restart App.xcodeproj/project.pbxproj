@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		803178B02A8E5C440079EA1F /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803178AF2A8E5C440079EA1F /* AudioPlayer.swift */; };
+		8042524F2A8DF3D30027B5E9 /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8042524E2A8DF3D30027B5E9 /* CircleGroupView.swift */; };
 		8077921B2A8BAFA4007084C5 /* SwiftUi_Restart_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077921A2A8BAFA4007084C5 /* SwiftUi_Restart_AppApp.swift */; };
 		8077921D2A8BAFA4007084C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077921C2A8BAFA4007084C5 /* ContentView.swift */; };
 		8077921F2A8BAFA6007084C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8077921E2A8BAFA6007084C5 /* Assets.xcassets */; };
 		807792222A8BAFA6007084C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 807792212A8BAFA6007084C5 /* Preview Assets.xcassets */; };
+		8077922A2A8BB130007084C5 /* success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 807792282A8BB12F007084C5 /* success.m4a */; };
+		8077922B2A8BB130007084C5 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 807792292A8BB130007084C5 /* chimeup.mp3 */; };
+		809A74232A8BB77F00458E8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809A74222A8BB77F00458E8B /* HomeView.swift */; };
+		809A74252A8BB79400458E8B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809A74242A8BB79400458E8B /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		803178AF2A8E5C440079EA1F /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		8042524E2A8DF3D30027B5E9 /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
 		807792172A8BAFA4007084C5 /* SwiftUi Restart App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUi Restart App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8077921A2A8BAFA4007084C5 /* SwiftUi_Restart_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUi_Restart_AppApp.swift; sourceTree = "<group>"; };
 		8077921C2A8BAFA4007084C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8077921E2A8BAFA6007084C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		807792212A8BAFA6007084C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		807792282A8BB12F007084C5 /* success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success.m4a; sourceTree = "<group>"; };
+		807792292A8BB130007084C5 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
+		809A74222A8BB77F00458E8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		809A74242A8BB79400458E8B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		807792192A8BAFA4007084C5 /* SwiftUi Restart App */ = {
 			isa = PBXGroup;
 			children = (
+				809A74212A8BB4DC00458E8B /* Utilities */,
+				809A74202A8BB4D500458E8B /* Views */,
+				8077922C2A8BB15F007084C5 /* Sounds */,
 				8077921A2A8BAFA4007084C5 /* SwiftUi_Restart_AppApp.swift */,
-				8077921C2A8BAFA4007084C5 /* ContentView.swift */,
+				809A741F2A8BB49C00458E8B /* Screens */,
 				8077921E2A8BAFA6007084C5 /* Assets.xcassets */,
 				807792202A8BAFA6007084C5 /* Preview Content */,
 			);
@@ -65,6 +80,41 @@
 				807792212A8BAFA6007084C5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8077922C2A8BB15F007084C5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				807792292A8BB130007084C5 /* chimeup.mp3 */,
+				807792282A8BB12F007084C5 /* success.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		809A741F2A8BB49C00458E8B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8077921C2A8BAFA4007084C5 /* ContentView.swift */,
+				809A74222A8BB77F00458E8B /* HomeView.swift */,
+				809A74242A8BB79400458E8B /* OnboardingView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		809A74202A8BB4D500458E8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8042524E2A8DF3D30027B5E9 /* CircleGroupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		809A74212A8BB4DC00458E8B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				803178AF2A8E5C440079EA1F /* AudioPlayer.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +175,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8077922B2A8BB130007084C5 /* chimeup.mp3 in Resources */,
 				807792222A8BAFA6007084C5 /* Preview Assets.xcassets in Resources */,
+				8077922A2A8BB130007084C5 /* success.m4a in Resources */,
 				8077921F2A8BAFA6007084C5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8042524F2A8DF3D30027B5E9 /* CircleGroupView.swift in Sources */,
+				809A74232A8BB77F00458E8B /* HomeView.swift in Sources */,
+				809A74252A8BB79400458E8B /* OnboardingView.swift in Sources */,
 				8077921D2A8BAFA4007084C5 /* ContentView.swift in Sources */,
 				8077921B2A8BAFA4007084C5 /* SwiftUi_Restart_AppApp.swift in Sources */,
+				803178B02A8E5C440079EA1F /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
